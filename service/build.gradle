@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.netology'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":db")
+}
+
+test {
+    useJUnitPlatform()
+}
